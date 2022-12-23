@@ -3,13 +3,11 @@ let scl = 20;
 let cols, rows;
 
 let zoff = 0;
-
 let particles = [];
-
 let flowfield;
 
 function setup() {
-  createCanvas(1600, 1000);
+  createCanvas(3200, 2000);
 
   cols = floor(width / scl);
   rows = floor(height / scl);
@@ -34,13 +32,14 @@ function draw() {
       v.setMag(0.5);
       flowfield[index] = v;
       xoff += inc;
-      stroke(0, 50);
-      push();
-      translate(x * scl, y * scl);
-      rotate(v.heading());
-      strokeWeight(1);
+
+      // stroke(0, 50);
+      // push();
+      // translate(x * scl, y * scl);
+      // rotate(v.heading());
+      // strokeWeight(1);
       // line(0, 0, scl, 0);
-      pop();
+      // pop();
     }
     yoff += inc;
 
