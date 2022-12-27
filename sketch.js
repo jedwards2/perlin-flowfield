@@ -33,7 +33,7 @@ function draw() {
       flowfield[index] = v;
       xoff += inc;
 
-      // stroke(0, 50);
+      // stroke(255, 50);
       // push();
       // translate(x * scl, y * scl);
       // rotate(v.heading());
