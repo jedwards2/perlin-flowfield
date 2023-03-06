@@ -20,7 +20,7 @@ class Particle {
   }
 
   show() {
-    stroke(77, 166, 255, 5);
+    stroke(159,15,255, 10);
     strokeWeight(1);
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
     this.updatePrev();
